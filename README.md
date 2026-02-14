@@ -39,24 +39,6 @@ This project was built as a Full Stack assignment using:
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots inside `frontend/screenshots/` folder and update the paths below.
-
-### 🔹 Invoice List Page
-![Invoice List](frontend/screenshots/invoice-list.png)
-
-### 🔹 Invoice Details Page
-![Invoice Details](frontend/screenshots/invoice-details.png)
-
-### 🔹 Create Invoice Page
-![Create Invoice](frontend/screenshots/create-invoice.png)
-
-### 🔹 Login Page
-![Login](frontend/screenshots/login.png)
-
----
-
 ## 📂 Folder Structure
 
 ```
@@ -74,8 +56,8 @@ invoice-project/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPO_LINK>
-cd invoice-project
+git https://github.com/sanjeetk5/Meru_Technosoft_Assignment.git
+cd Meru_Technosoft_Assignment
 ```
 
 ---
@@ -105,9 +87,9 @@ backend/.env
 Add the following variables:
 
 ```env
-PORT=5000
+PORT=6060
 MONGO_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_secret_key
+JWT_SECRET= MY_SUPER_SECRET_KEY_12345
 ```
 
 ### ✅ Example MongoDB Atlas URI format:
@@ -141,7 +123,7 @@ npm run dev
 Backend will start at:
 
 ```
-http://localhost:5000
+http://localhost:6060
 ```
 
 ---
@@ -176,7 +158,7 @@ Make sure it looks like this:
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "http://localhost:6060/api",
 });
 
 api.interceptors.request.use((config) => {
@@ -303,9 +285,9 @@ Render Dashboard → Your Service → Environment
 Add:
 
 ```env
-PORT=5000
+PORT=6060
 MONGO_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_secret_key
+JWT_SECRET= MY_SUPER_SECRET_KEY_12345
 ```
 
 ### Step 5: Deploy
@@ -314,7 +296,7 @@ Click Deploy.
 After deployment, you will get backend URL like:
 
 ```
-https://invoice-backend-1-i32j.onrender.com
+Url: "https://invoice-backend-1-i32j.onrender.com"
 ```
 
 ---
@@ -353,7 +335,7 @@ Click Deploy.
 Frontend will be live at:
 
 ```
-https://invoice-frontend-amber.vercel.app/
+Url: "https://invoice-frontend-amber.vercel.app/"
 ```
 
 ---
